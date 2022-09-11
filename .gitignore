@@ -4,6 +4,7 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 package-lock.json
+yarn.lock
 
 ### STS ###
 .apt_generated
