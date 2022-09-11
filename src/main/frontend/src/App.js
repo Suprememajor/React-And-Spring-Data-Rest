@@ -13,11 +13,9 @@ class App extends Component {
   }
 
   componentDidMount() {
-      fetch("http://localhost:8080/api/employees")
-      // fetch("/api/employees")
+      fetch("/api/employees")
           .then(res => res.json())
-          .then(
-              (result) => {
+          .then((result) => {
                   this.setState({
                       isLoaded: true,
                       employees: result._embedded.employees
